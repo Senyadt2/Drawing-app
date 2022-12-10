@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+ <!-- Coding By CodingNepal - youtube. com/codingnepal -->
+<html lang="en" dir="1tr">
+   <head>
+     <meta charset="utf-8">
+     <title>Drawing App</title>
+     <link rel="stylesheet" href= "style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;500;600;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+
+
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+     <meta name= "viewport" content= "width-device-width, initial-scale=1.0">
+     
+   </head>
+  <body>
+   
+    <!-- 1stpart -->
+    
+     <nav>
+         <!-- <a href="index.html"> <img src=""> </a>  logo -->
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+
+            <ul>
+              <li><a href="#sec1">HOME</a></li>
+              <li><a href="#sec2">ABOUT</a></li>
+              <li><a id="logout" href="form.php">LOG-OUT</a></li>
+            </ul>
+        </div>
+         
+      </nav>
+    <section id="sec1">
+     <main>
+      <div class="container">
+        <section class="tools-board">
+          <div class="row">            
+            <label class="title">Options</label>
+            <ul class="options">
+              <li class="option active tool" id="brush">
+                <img src="brush.svg" alt="">
+                <span>Brush</span>
+              </li>
+              <li class="option tool" id="eraser">
+                <img src="eraser.svg" alt="">
+                <span>Eraser</span>
+              </li>
+              <li class="option">
+                <input type="range" id="size-slider" min="1" max="30" value="5">
+              </li>
+            </ul>
+          </div>
+          <div class="row colors">
+            <label class="title">Colors</label>
+            <ul class="options">
+              <li class="option"></li>
+              <li class="option selected"></li>
+              <li class="option"></li>
+              <li class="option"></li>
+              <li class="option">
+                <input type="color" id="color-picker" value="#4A98F7">
+              </li>
+            </ul>
+          </div>
+          <div class="row buttons">
+            <button class="clear-canvas">Clear Canvas</button>
+            <button class="save-img">Save As Image</button>
+          </div>
+        </section>
+        <section class="drawing-board">
+          <canvas>  <script src="script.js"></script></canvas>
+        </section>
+      </div>
+       </main>
+      </section>
+      <section id="sec2"> 
+       
+      <div class="about_text">
+        <h1 style="text-align:center;font-size:35px;margin-top: 55px;"> 
+          <span style="display:relative;margin-top: 30px;font-family: 'Pacifico', cursive;
+          font-family: 'Poppins', sans-serif;
+          font-family: 'Roboto Slab', serif;">About</span> </h1>
+          
+        <div class="paragragraph"> 
+          <p >
+            hellohellohellohello hellohellohello hellohellohello hellohello hellohello hellohellohello hellohello hellohellohello
+
+          </p>
+      </section>
+      <section id="sec3">
+         
+      </section>
+    
+  </body>
+</html>
